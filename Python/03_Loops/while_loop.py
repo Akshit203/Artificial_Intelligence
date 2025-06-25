@@ -18,7 +18,6 @@ while (count < 5):
     print(count)
 
 
-
 count2 = 0
 
 while (count2 < 5):

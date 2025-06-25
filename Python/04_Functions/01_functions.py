@@ -67,3 +67,37 @@ res3 = test6([1,2,3,4],[100,101,102,103,104], [25552029301345]) # [1, 2, 3, 4, 1
 print(res)
 print(res2)
 print(res3)
+
+
+# --------------------------------------------------------------------------------------------------------------
+
+# *args allows the function to accept any number of positional arguments, which are packed into a tuple.
+
+def test7(*args):
+    return args
+
+print(type(test7())) # <class 'tuple'>
+
+print(test7()) # () Empty tuple
+
+print(test7(1, 2, 3, 4, 5))
+
+# --------------------------------------------------------------------------------------------------------------
+
+def test8(** kwargs):
+    return kwargs
+
+print(type(test8())) # <class 'dict'>
+
+# **args means you're accepting any number of keyword arguments. 
+# Keyword arguments are passed like: test8(name="Akshit", age=22)
+
+# These keyword arguments are packed into a dictionary, with keys as argument names 
+# and values as their respective values.
+
+"""
+*args → for variable positional arguments
+
+**kwargs → for variable keyword arguments
+
+"""

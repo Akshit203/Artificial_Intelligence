@@ -25,3 +25,4 @@ def extract_int2(input_list):
     return result2
 
 print(extract_int2(list1)) # [1, 2, 3, 4, 5, 6, 200, 400, 600, 800]
+print()

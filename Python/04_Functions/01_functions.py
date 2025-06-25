@@ -83,12 +83,6 @@ print(test7()) # () Empty tuple
 print(test7(1, 2, 3, 4, 5))
 
 # --------------------------------------------------------------------------------------------------------------
-
-def test8(** kwargs):
-    return kwargs
-
-print(type(test8())) # <class 'dict'>
-
 # **args means you're accepting any number of keyword arguments. 
 # Keyword arguments are passed like: test8(name="Akshit", age=22)
 
@@ -101,3 +95,12 @@ print(type(test8())) # <class 'dict'>
 **kwargs → for variable keyword arguments
 
 """
+
+def test8(** kwargs):
+    return kwargs
+
+print(type(test8())) # <class 'dict'>
+
+print(test8(name = "xyz", num = 100, list = [1,2,3,4]))
+# output : {'name': 'xyz', 'num': 100, 'list': [1, 2, 3, 4]}
+

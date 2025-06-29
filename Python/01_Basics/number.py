@@ -21,6 +21,27 @@ print (1 == 2 and 2 < 3) # False
 
 ############################################################################################
 
+a = 0
+b = 1
+
+# This is simultaneous assignment (tuple unpacking)
+
+a, b = b, a + b  
+
+# Python first evaluates the entire right-hand side: (b, a + b) → (1, 0 + 1)
+# Then both assignments happen at the same time: a = 1, b = 1
+# Original values of 'a' and 'b' are preserved during evaluation
+
+# This is sequential assignment (line-by-line) :
+
+a = b           
+b = a + b       
+
+# 'a' is updated first (a = 1), so in the next line:
+# b = a + b becomes b = 1 + 1 = 2 — original value of 'a' (which was 0) is lost
+# This changes the logic in cases like Fibonacci or any dependency-based updates
+
+############################################################################################
 
 print (math.floor(4.5)) # 4
 print (math.floor(-4.5)) # -5

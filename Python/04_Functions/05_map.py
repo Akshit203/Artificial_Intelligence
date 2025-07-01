@@ -27,6 +27,7 @@ def uppercase1 (n):
 res2 = map(uppercase1, words)
 print(list(res2)) # ['XYZ', 'ABC', 'IJK']
 
+
 # Get the length of each word in a list
 
 words1 = ['python', 'java']

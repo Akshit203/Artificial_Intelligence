@@ -78,3 +78,21 @@ print(new_car.model)
 
 
 #######################################################################################
+
+class Test2 :
+
+    def __init__(self, brand1, model1):
+
+        self.brand1 = brand1
+        self.model1 = model1
+    
+    def display_full_name(self):
+        return self.brand1 +" "+ self.model1
+
+new_test = Test2("Mahindra", "Thar")
+
+display_name = new_test.display_full_name()
+print(display_name)
+
+
+        

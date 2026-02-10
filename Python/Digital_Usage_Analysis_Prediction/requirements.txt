@@ -1,0 +1,6 @@
+pandas
+numpy
+scikit-learn
+
+Place your dataset in the `data/` folder.
+Run the main script

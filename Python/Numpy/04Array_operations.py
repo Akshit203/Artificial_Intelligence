@@ -163,4 +163,16 @@ c = np.array([7,8,9])
 
 print("compatabilty shapes :", a.shape == b.shape) # True
 
+# vstack vs hstack
 
+original_arr = np.array([[1,2],
+                         [3,4],
+                         [5,6]])
+new_row = np.array([1,1])
+
+x = np.vstack((original_arr, new_row))
+print(x)
+
+new_row2 = np.array([[1],[1],[1]])
+y = np.hstack((original_arr, new_row2))
+print(y)
